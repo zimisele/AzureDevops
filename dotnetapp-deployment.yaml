@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: christianhxc/simpleapp:1.0
+        image: christianhxc/simpleapp:#{Version}#
         ports:
         - containerPort: 80
 ---
