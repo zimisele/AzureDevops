@@ -10,6 +10,7 @@ pr:
   branches:
     include:
     - master
+    - feature-*
 
 variables:
   imageName: 'simpleapp:1.1.$(Build.BuildId)'
