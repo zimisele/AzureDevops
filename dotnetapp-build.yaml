@@ -1,5 +1,5 @@
 pool:
-  name: 'ubuntuself'
+  name: 'Default'
 
 variables:
   imageName: 'simpleapp:1.1.$(Build.BuildId)'
