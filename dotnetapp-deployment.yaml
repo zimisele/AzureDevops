@@ -23,6 +23,7 @@ spec:
       containers:
       - name: dotnetapp
         image: christianhxc/simpleapp:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
