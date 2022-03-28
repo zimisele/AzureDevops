@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: svc-master
+  name: master
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: christianhxc/simpleapp:latest
+        image: maselweni:app
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: dotnetapp
-  namespace: svc-master
+  namespace: master
 spec:
   type: LoadBalancer
   ports:
