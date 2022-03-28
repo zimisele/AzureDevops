@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: dotnetapp
-        image: maselweni:app
+        image: maselweni/app:soso
         imagePullPolicy: Always
         ports:
         - containerPort: 80
