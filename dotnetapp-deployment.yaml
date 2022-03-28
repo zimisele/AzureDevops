@@ -7,7 +7,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dotnetapp-deployment
-  namespace: svc-master
+  namespace: master
   labels:
     app: dotnetapp
 spec:
